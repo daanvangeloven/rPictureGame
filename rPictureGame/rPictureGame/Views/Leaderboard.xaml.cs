@@ -34,15 +34,17 @@ namespace Picturegame.Views
         {
             try
             {
+                // Request top 25 players from api
                 string Result = await requests.MakeGetRequest<DataTable>("https://api.picturegame.co/leaderboard?count=25&includeRoundNumbers=false");
                 List<Player> LeaderList = new List<Player>();
                 JToken jToken = JObject.Parse(Result)["leaderboard"];
+                // Int to keep track of last player rank to calculate difference
                 int LastPlayer = 0;
                 foreach (JToken token in jToken)
                 {
+                    // Initializa and write object
                     Player temPlayer = new Player();
                     temPlayer.Rank = token["rank"].Value<string>();
-                    Debug.WriteLine(temPlayer.Rank);
                     temPlayer.Username = token["username"].Value<string>();
                     temPlayer.NumWins = token["numWins"].Value<string>();
                     if (LastPlayer == 0)
@@ -53,18 +55,16 @@ namespace Picturegame.Views
                     {
                         temPlayer.Difference = (LastPlayer - token["numWins"].Value<int>()).ToString();
                     }
-
                     LastPlayer = token["numWins"].Value<int>();
-
-
-
                     LeaderList.Add(temPlayer);
                 }
         
                 Players = new ObservableCollection<Player>(LeaderList);
+                // Refresh Listview
                 LeaderboardView.ItemsSource = Players;
                 UpdateChildrenLayout();
             }    
+            // Can't be bothered to add edgecases
             catch
             {
                 await DisplayAlert("No connection", "Couldn't load leaderboard data", "Ok");
@@ -72,13 +72,13 @@ namespace Picturegame.Views
         }
 
         private void LeaderboardView_OnRefreshing(object sender, EventArgs e)
-        {
+        {        
             FillList();
         }
 
         private async void Cell_OnTapped(object sender, EventArgs e)
         {
-            
+            // Get playerinfo from username and open modal
             UserStats playermodal = new UserStats();
             playermodal.FillFromUsername(((TextCell)sender).ClassId);
             await Navigation.PushModalAsync(playermodal);

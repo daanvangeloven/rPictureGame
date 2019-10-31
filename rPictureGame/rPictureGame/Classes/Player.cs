@@ -7,6 +7,7 @@ namespace Picturegame.Classes
 {
     public class Player
     {
+        // Object to be filled from json
         [JsonProperty("rank")]
         public string Rank { get; set; }
         [JsonProperty("username")]

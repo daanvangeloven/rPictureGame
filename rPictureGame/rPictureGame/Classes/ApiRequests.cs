@@ -19,17 +19,11 @@ namespace Picturegame.Services
         }
 
         public async Task<string> MakeGetRequest<T>(string resource)
-        {
-            
+        {        
                 var uri = new Uri(string.Format(resource));
                 var response = await _client.GetAsync(uri);
-                // if (response.IsSuccessStatusCode)
-               // {
-                    var content = await response.Content.ReadAsStringAsync();
-                    return content;
-
-                    //}
-
+                var content = await response.Content.ReadAsStringAsync();
+                return content;
         }
     }
 
