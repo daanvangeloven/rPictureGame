@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Picturegame.Views.UserStats"
+             Title="Player Stats">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Label Text="User Info"
+                    VerticalOptions="Start" 
+                    FontSize="Title"
+                    HorizontalOptions="CenterAndExpand" />
+                <Frame HasShadow="False" VerticalOptions="Start" BorderColor="Black"  Margin="20,0">
+                    <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                        <Label VerticalOptions="Center" FontSize="Large" Text="Username: " FontAttributes="Bold"></Label>
+                        <Entry VerticalOptions="Center"  FontSize="Large" Completed="UserEntry_OnCompleted" Placeholder="username" x:Name="UserEntry"></Entry>
+                    </StackLayout>
+                </Frame>
+                <StackLayout IsVisible="False" x:Name="InfoLayout">
+                    <Frame HasShadow="False" BorderColor="Black" Margin="20,0">
+                        <Label HorizontalOptions="CenterAndExpand" x:Name="Username" Text="Username" FontSize="Title"></Label>
+                    </Frame>
+                    <Frame HasShadow="False" BorderColor="Black" Margin="20,0">
+                        <Label  x:Name="NumWinsLabel" Text="Total Wins:" FontSize="Large"></Label>
+                    </Frame>
+                    <Frame HasShadow="False" BorderColor="Black" Margin="20,0">
+                        <Label  x:Name="RankLabel" Text="Total Wins:" FontSize="Large"></Label>
+                    </Frame>
+                    <Frame HasShadow="False" BorderColor="Black" Margin="20,0">
+                        <Label  x:Name="PlayerBehind" Text="Behind:" FontSize="Large"></Label>
+                    </Frame>
+                    <Frame HasShadow="False" BorderColor="Black" Margin="20,0">
+                        <Label  x:Name="PlayerInFront" Text="In front of:" FontSize="Large"></Label>
+                    </Frame>
+                    <Frame x:Name="ZakPic" IsVisible="False">
+                        <Image Source="zackystaby"></Image>
+                    </Frame>
+                    <Frame IsVisible="False" HasShadow="False" BorderColor="Black" Margin="20,0">
+                        <StackLayout>
+                            <Label Text="Won rounds:" FontSize="Title"></Label>
+                            <ListView x:Name="RoundListView"></ListView>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

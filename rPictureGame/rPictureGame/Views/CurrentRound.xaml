@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Picturegame.Views.CurrentRound">
+    <ContentPage.Content>
+        <ScrollView Margin="10" HorizontalOptions="CenterAndExpand">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="10">
+                <Label FontSize="Title" x:Name="CurrentTitle" Text="Round title"></Label>
+                <Image x:Name="CurrentImage"></Image>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="FlairLabel" HorizontalOptions="Start"></Label>
+                    <Button x:Name="UsernameLabel" Clicked="UsernameLabel_OnClicked" HorizontalOptions="End"></Button>
+                </StackLayout>
+                <Button x:Name="RedditBtn" IsEnabled="False" Clicked="Button_OnClicked" TextColor="White" BackgroundColor="#FF4301" CornerRadius="10" HorizontalOptions="CenterAndExpand" Text="Go to post on reddit"></Button>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
