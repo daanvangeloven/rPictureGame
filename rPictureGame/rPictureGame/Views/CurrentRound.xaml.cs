@@ -29,29 +29,37 @@ namespace Picturegame.Views
 
         private async void LoadRound()
         {
-            // Keep this method active whilest the page is loaded
-            while (true)
+            try
             {
-                // Get round info from picturegame api
-                string pictureGameRequest = await new ApiRequests().MakeGetRequest<string>("https://api.picturegame.co/current");
-                round = JObject.Parse(pictureGameRequest)["round"].ToObject<Round>();
-                // Get post flair from reddit api
-                string redditGetRequest = await new ApiRequests().MakeGetRequest<string>("https://www.reddit.com/comments/"+ round.Id +"/.json");
-                JArray jsonArray = JArray.Parse(redditGetRequest);
-                string flairtext = (string)jsonArray.SelectToken("$..data.children[0].data.link_flair_text");
-                // Check if title or post flair has changed to update layout
-                if (round.Title != CurrentTitle.Text || FlairLabel.Text != flairtext)
+                // Keep this method active whilest the page is loaded
+                while (true)
                 {
-                    // Should be bindings below here
-                    FlairLabel.Text = flairtext;
-                    UsernameLabel.Text = "u/" + round.HostName;
-                    UsernameLabel.ClassId = round.HostName;
-                    CurrentTitle.Text = round.Title;
-                    CurrentImage.Source = round.ImageSource;
-                    RedditBtn.IsEnabled = true;
+                    // Get round info from picturegame api
+                    string pictureGameRequest = await new ApiRequests().MakeGetRequest<string>("https://api.picturegame.co/current");
+                    round = JObject.Parse(pictureGameRequest)["round"].ToObject<Round>();
+                    // Get post flair from reddit api
+                    string redditGetRequest = await new ApiRequests().MakeGetRequest<string>("https://www.reddit.com/comments/" + round.Id + "/.json");
+                    JArray jsonArray = JArray.Parse(redditGetRequest);
+                    string flairtext = (string)jsonArray.SelectToken("$..data.children[0].data.link_flair_text");
+                    // Check if title or post flair has changed to update layout
+                    if (round.Title != CurrentTitle.Text || FlairLabel.Text != flairtext)
+                    {
+                        // Maybe change to binding in future
+                        FlairLabel.Text = flairtext;
+                        UsernameLabel.Text = "u/" + round.HostName;
+                        UsernameLabel.ClassId = round.HostName;
+                        CurrentTitle.Text = round.Title;
+                        CurrentImage.Source = round.ImageSource;
+                        RedditBtn.IsEnabled = true;
+                    }
+                    // Check for updates every 15 seconds
+                    await Task.Delay(15000);
                 }
-                // Check for updates every 10 seconds
-                await Task.Delay(10000);
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine(e);
+                await DisplayAlert("Error", "The app has run into some issues. \n Make sure you have a valid connection or try again later.", "Ok");
             }
             
         }
@@ -64,10 +72,17 @@ namespace Picturegame.Views
 
         private async void UsernameLabel_OnClicked(object sender, EventArgs e)
         {
-            // Open modal with player info
-            UserStats playermodal = new UserStats();
-            playermodal.FillFromUsername(UsernameLabel.ClassId);
-            await Navigation.PushModalAsync(playermodal);
+            try
+            {
+                // Open modal with player info
+                UserStats playermodal = new UserStats();
+                playermodal.FillFromUsername(UsernameLabel.ClassId);
+                await Navigation.PushModalAsync(playermodal);
+            }
+            catch (Exception exc)
+            {
+                Debug.WriteLine(exc);
+            }
         }
     }
 

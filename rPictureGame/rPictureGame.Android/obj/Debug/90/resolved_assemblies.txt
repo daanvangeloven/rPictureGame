@@ -1,4 +1,4 @@
-C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\rPictureGame.Android.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\PictureGame.dll
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\Mono.Android.dll

@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Picturegame.Views.Leaderboard">
+             x:Class="Picturegame.Views.Leaderboard"
+             Title="Top 25 players">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Top 25 players:"

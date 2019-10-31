@@ -3,8 +3,8 @@
 	.section	.rodata..L.str.1,"aMS",@progbits,1
 	.type	.L.str.1, @object
 .L.str.1:
-	.asciz	"com.companyname.rpicturegame"
-	.size	.L.str.1, 29
+	.asciz	"com.daanoking.rpicturegame"
+	.size	.L.str.1, 27
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
 	.p2align	3
@@ -65,7 +65,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",@progbits,1
 	.type	.L.str.8, @object
 .L.str.8:
-	.asciz	"bbcdc3e6-c209-4a7c-9e84-1f17086c520e"
+	.asciz	"a559654a-1aed-4447-9b18-edf175cae0cb"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",@progbits,1
 	.type	.L.str.9, @object

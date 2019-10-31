@@ -65,9 +65,10 @@ namespace Picturegame.Views
                 UpdateChildrenLayout();
             }    
             // Can't be bothered to add edgecases
-            catch
+            catch(Exception e)
             {
-                await DisplayAlert("No connection", "Couldn't load leaderboard data", "Ok");
+                Debug.WriteLine(e);
+                await DisplayAlert("Error", "The app has run into some issues. \n Make sure you have a valid connection or try again later.", "Ok");
             }
         }
 
@@ -78,10 +79,18 @@ namespace Picturegame.Views
 
         private async void Cell_OnTapped(object sender, EventArgs e)
         {
-            // Get playerinfo from username and open modal
-            UserStats playermodal = new UserStats();
-            playermodal.FillFromUsername(((TextCell)sender).ClassId);
-            await Navigation.PushModalAsync(playermodal);
+            try
+            {
+                // Get playerinfo from username and open modal
+                UserStats playermodal = new UserStats();
+                playermodal.FillFromUsername(((TextCell)sender).ClassId);
+                await Navigation.PushModalAsync(playermodal);
+            }
+            catch(Exception exc)
+            {
+                Debug.WriteLine(exc);
+                await DisplayAlert("Error", "The app has run into some issues. \n Make sure you have a valid connection or try again later.", "Ok");
+            }
         }
     }
 

@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Picturegame.Views.CurrentRound">
+             x:Class="Picturegame.Views.CurrentRound"
+             Title="Current Round">
     <ContentPage.Content>
         <ScrollView Margin="10" HorizontalOptions="CenterAndExpand">
             <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="10">

@@ -8,7 +8,7 @@
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>rPictureGame.Droid</RootNamespace>
-    <AssemblyName>rPictureGame.Android</AssemblyName>
+    <AssemblyName>PictureGame</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -105,9 +105,6 @@
       <Project>{64AC2E87-9E35-4962-B93A-28B3B53B1896}</Project>
       <Name>rPictureGame</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\zackystaby.gif" />

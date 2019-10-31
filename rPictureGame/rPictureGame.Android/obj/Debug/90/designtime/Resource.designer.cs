@@ -6443,10 +6443,7 @@ namespace rPictureGame.Droid
 			public const int tooltip_frame_light = 2131165492;
 			
 			// aapt resource value: 0x7F070135
-			public const int xamarin_logo = 2131165493;
-			
-			// aapt resource value: 0x7F070136
-			public const int zackystaby = 2131165494;
+			public const int zackystaby = 2131165493;
 			
 			static Drawable()
 			{

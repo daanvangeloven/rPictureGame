@@ -1,0 +1,14 @@
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\Views\CurrentRound.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\Views\Leaderboard.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\Views\UserStats.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.csproj.CoreCompileInputs.cache
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.AssemblyInfoInputs.cache
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.AssemblyInfo.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\PictureGame.deps.json
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\PictureGame.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\PictureGame.pdb
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\PictureGame.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\PictureGame.pdb
