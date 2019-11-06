@@ -5,9 +5,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Picturegame.Views.Leaderboard"
-             Title="Top 25 players">
+             Title="Top 25 players"
+             BackgroundImageSource="drawable/mask9">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20" BackgroundColor="White">
             <Label Text="Top 25 players:"
                 VerticalOptions="Start" 
                 Margin="10"

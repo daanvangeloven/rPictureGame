@@ -14,3 +14,5 @@ C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Debug\nets
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Debug\netstandard2.0\rPictureGame.dll
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Debug\netstandard2.0\rPictureGame.pdb
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Debug\netstandard2.0\Views\ImageMasker.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Debug\netstandard2.0\System.Drawing.Common.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Debug\netstandard2.0\rPictureGame.csproj.CopyComplete

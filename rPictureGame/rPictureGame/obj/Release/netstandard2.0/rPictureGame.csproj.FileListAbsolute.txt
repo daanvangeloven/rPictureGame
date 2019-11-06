@@ -7,8 +7,12 @@ C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\ne
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.AssemblyInfoInputs.cache
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.AssemblyInfo.cs
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\XamlC.stamp
-C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\PictureGame.deps.json
-C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\PictureGame.dll
-C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\PictureGame.pdb
-C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\PictureGame.dll
-C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\PictureGame.pdb
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\rPictureGame.deps.json
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\rPictureGame.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\rPictureGame.pdb
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\bin\Release\netstandard2.0\System.Drawing.Common.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.csprojAssemblyReference.cache
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\Views\ImageMasker.xaml.g.cs
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.csproj.CopyComplete
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.dll
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame\obj\Release\netstandard2.0\rPictureGame.pdb

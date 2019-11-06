@@ -5,17 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Picturegame.Views.CurrentRound"
-             Title="Current Round">
+             Title="Current Round"
+             BackgroundImageSource="mask6">
     <ContentPage.Content>
-        <ScrollView Margin="10" HorizontalOptions="CenterAndExpand">
+        <ScrollView BackgroundColor="White" Margin="10" HorizontalOptions="CenterAndExpand">
             <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="10">
                 <Label FontSize="Title" x:Name="CurrentTitle" Text="Round title"></Label>
                 <Image x:Name="CurrentImage"></Image>
-                <StackLayout Orientation="Horizontal">
-                    <Label x:Name="FlairLabel" HorizontalOptions="Start"></Label>
-                    <Button x:Name="UsernameLabel" Clicked="UsernameLabel_OnClicked" HorizontalOptions="End"></Button>
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <Frame x:Name="FlairFrame" VerticalOptions="Center" HorizontalOptions="Start" Padding="5">
+                        <Label  x:Name="FlairLabel" BackgroundColor="Transparent" TextColor="White" ></Label>
+                    </Frame>
+                    <Button VerticalOptions="Center" x:Name="UsernameLabel" Clicked="UsernameLabel_OnClicked" HorizontalOptions="End"></Button>
                 </StackLayout>
-                <Button x:Name="RedditBtn" IsEnabled="False" Clicked="Button_OnClicked" TextColor="White" BackgroundColor="#FF4301" CornerRadius="10" HorizontalOptions="CenterAndExpand" Text="Go to post on reddit"></Button>
+                <Button x:Name="RedditBtn" IsEnabled="False" Clicked="Button_OnClicked" TextColor="White" BackgroundColor="#FF4301" CornerRadius="10" HorizontalOptions="Center" Text="Go to post on reddit"></Button>
                 
             </StackLayout>
         </ScrollView>

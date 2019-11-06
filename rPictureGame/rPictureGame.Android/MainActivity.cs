@@ -33,6 +33,7 @@ namespace rPictureGame.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
         public static readonly int PickImageId = 1000;
+        internal static MainActivity Instance { get; private set; }
 
         public TaskCompletionSource<Stream> PickImageTaskCompletionSource { set; get; }
 

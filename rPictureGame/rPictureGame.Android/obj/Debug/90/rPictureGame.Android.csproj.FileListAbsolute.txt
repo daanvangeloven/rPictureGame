@@ -499,3 +499,6 @@ C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\De
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\rPictureGame.dll
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\assets\rPictureGame.dll.mdb
 C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\android\src\md50d35632fc2fdf32a3700f09c5976b052\MainActivity.java
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\res\drawable\mask9.png
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\res\drawable\mask6.png
+C:\Users\Daan\source\repos\rPictureGame\rPictureGame\rPictureGame.Android\obj\Debug\90\res\drawable\mask2.png

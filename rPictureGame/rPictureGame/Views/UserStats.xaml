@@ -5,10 +5,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Picturegame.Views.UserStats"
-             Title="Player Stats">
+             Title="Player Stats"
+             BackgroundImageSource="mask2">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Margin="10">
+        <Frame BackgroundColor="White" Margin="20" CornerRadius="10">
+        <ScrollView >
+            <StackLayout>
                 <Label Text="User Info"
                     VerticalOptions="Start" 
                     FontSize="Title"
@@ -47,5 +49,6 @@
                 </StackLayout>
             </StackLayout>
         </ScrollView>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

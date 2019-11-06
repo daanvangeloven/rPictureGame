@@ -46,15 +46,21 @@ namespace Picturegame.Views
                     {
                         // Maybe change to binding in future
                         FlairLabel.Text = flairtext;
-                        UsernameLabel.Text = "u/" + round.HostName;
-                        UsernameLabel.ClassId = round.HostName;
-                        CurrentTitle.Text = round.Title;
-                        CurrentImage.Source = round.ImageSource;
-                        RedditBtn.IsEnabled = true;
+                        if (flairtext == "UNSOLVED") { FlairFrame.BackgroundColor = Color.LightBlue; }
+                        else if (flairtext == "ROUND OVER") { FlairFrame.BackgroundColor = Color.Green; }
+                        else { FlairFrame.BackgroundColor = Color.Red; }
                     }
+
+                    UsernameLabel.Text = "u/" + round.HostName;
+                    UsernameLabel.ClassId = round.HostName;
+                    CurrentTitle.Text = round.Title;
+                    CurrentImage.Source = round.ImageSource;
+                    RedditBtn.IsEnabled = true;
+
                     // Check for updates every 15 seconds
                     await Task.Delay(15000);
                 }
+            
             }
             catch(Exception e)
             {
